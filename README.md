@@ -5,25 +5,21 @@
 - BUSCAR LOG DE FALHA DE AUTENTICAÇÃO NO WINDOWS 
 
 # Como executar
-.\dhcp.ps1 -IP 192.168.112.200
+Buscar todas as falha de autenticação com ID 4625
 
-Sendo que o 192.168.112.200 é o IP que voce quer buscar, voce pode buscar por um IP, range ou pelo nome da máquina:
+.\rdp2.ps1 -BUSCA TUDO
 
-- Buscando pelo IP 192.168.112.200
+Buscando falha de autenticação que partiram do IP informado
 
-.\dhcp.ps1 -IP 192.168.112.200
+.\rdp2.ps1 -IP 127.0.0.1
 
-- Buscando pela máquina USUARIO01
-
-.\dhcp.ps1 -IP USUARIO01
-
-- Buscando pelo range 192.168.112.0/24
-
-.\dhcp.ps1 -IP 192.168.112
-
-
+Buscando falhas de autenticação pelo nome do host
+.\rdp2.ps1 -COMPUTERNAME felipe-A520M-DS3H
 
 # Observação  
 Script foi testado somente no Windows Server 2012 R2 Datacenter  
 
 Ideias e melhorias são bem vindas
+
+A base do script foi retirada do site: http://woshub.com/rdp-connection-logs-forensics-windows/
+
