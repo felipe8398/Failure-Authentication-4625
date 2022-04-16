@@ -44,7 +44,7 @@ WorkstationName = $_.Message -replace '(?smi).*\s\sWorkstation Name::*\s+([^\s]+
 else 
 {
 write-host "VOCE PODE FAZER A BUSCA DE TRES FORMAS"
-write-host "BUSCANDO PELO IP: .\rdp2.ps1 -IP 127.0.0.1"
-write-host "BUSCANDO PELO NOME DA MÁQUINA QUE TENTOU AUTENTICAR: .\rdp2.ps1 -COMPUTERNAME felipe-A520M-DS3H"
-write-host "BUSCANDO POR TUDO: .\rdp2.ps1 -BUSCA TUDO"
+write-host "BUSCANDO PELO IP: .\failed.ps1 -IP 127.0.0.1"
+write-host "BUSCANDO PELO NOME DA MÁQUINA QUE TENTOU AUTENTICAR: .\failed.ps1 -COMPUTERNAME felipe-A520M-DS3H"
+write-host "BUSCANDO POR TUDO: .\failed.ps1 -BUSCA TUDO"
 }
